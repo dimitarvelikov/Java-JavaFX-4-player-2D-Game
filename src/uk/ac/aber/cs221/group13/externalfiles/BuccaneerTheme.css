@@ -1,0 +1,148 @@
+/*
+*
+*GameTheme CSS
+*
+*@author mol12
+*@version 0.1
+*
+*/
+    
+.root {
+    -fx-background-color: #87cefa;
+}
+
+#title .text{
+    -fx-font-size: 30pt;
+    -fx-stroke: #bcc0c6;
+    -fx-stroke-width: 0.5;
+    -fx-effect: dropshadow( gaussian , #a06f29 , 2 , 3 , 1 , 1 );
+}
+.combo-box .list-cell 
+{
+    -fx-background: #1e90ff;
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+
+  
+}
+
+.combo-box-popup .list-view 
+{
+    -fx-background-color: #1e90ff, #1e90ff;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}    
+
+.combo-box-popup .list-view .list-cell 
+{
+    -fx-background-color: #1e90ff;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover 
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base  
+{
+    -fx-background-color: #1e90ff, #1e90ff, #1e90ff, #1e90ff;
+
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color:#ffffff;
+}
+
+.combo-box-base:showing 
+{
+    -fx-color:#dbdbdb;
+}
+
+#title{
+
+    -fx-font-family: "Lucida Calligraphy Italic", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #ffffff;
+    -fx-font-smoothing-type: lcd;
+    -fx-opacity: 1;
+}
+#currentPlayer{
+    
+    -fx-text-fill:green;
+}
+
+.text{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Lucida Calligraphy Italic", Helvetica, Arial, sans-serif;
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: #000000;
+}
+
+.label{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Lucida Calligraphy Italic", Helvetica, Arial, sans-serif;
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: #000000;
+    -fx-stroke: #000000;
+    -fx-stroke-width:0.1
+}
+
+.text-field {
+    -fx-border-color: #00BFFF;
+    -fx-min-height:15;
+    -fx-border-width: 2;
+    -fx-font-size: 12pt;
+    -fx-background-color: #1e90ff;
+    -fx-font-family: "Lucida Calligraphy Italic", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #000000;
+}
+
+.text-field:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #00BFFF;
+    -fx-border-width: 2;
+    -fx-background-radius: 2;
+    -fx-background-color: #1e90ff;
+    -fx-font-family: "Lucida Calligraphy Italic", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #000000;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #B0E0E6;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
